@@ -12,7 +12,7 @@ app.use(cors())
 app.use('/api',tourRoute)
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('route is working!')
   })
 
